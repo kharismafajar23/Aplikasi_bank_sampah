@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DaftarActivity"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_masuk"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgDaftar"
+        android:layout_width="150dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/img_daftar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/inputUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintTop_toBottomOf="@id/imgDaftar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/username_label"
+            android:textColor="@color/white"
+            android:textSize="45px" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:lines="1"
+            android:paddingLeft="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/bg_input_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/username_label"
+            android:textColorHint="@color/abu_abu"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintTop_toBottomOf="@id/inputUsername">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/email_label"
+            android:textColor="@color/white"
+            android:textSize="45px" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:lines="1"
+            android:paddingLeft="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/bg_input_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/email_label"
+            android:textColorHint="@color/abu_abu"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/inputEmail">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/password_label"
+            android:textSize="45px"
+            android:textColor="@color/white"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:lines="1"
+            android:paddingLeft="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/bg_input_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/password_label"
+            android:textColorHint="@color/abu_abu"
+            android:textColor="@color/black"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputKonfirmasiPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/inputPassword">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/konfirmasi_password_label"
+            android:textSize="45px"
+            android:textColor="@color/white"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etKonfirmasiPassword"
+            android:lines="1"
+            android:paddingLeft="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/bg_input_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/konfirmasi_password_label"
+            android:textColorHint="@color/abu_abu"
+            android:textColor="@color/black"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputNoTelepon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/inputKonfirmasiPassword">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/no_telepon_label"
+            android:textSize="45px"
+            android:textColor="@color/white"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etNoTelepon"
+            android:lines="1"
+            android:paddingLeft="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/bg_input_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/no_telepon_label"
+            android:textColorHint="@color/abu_abu"
+            android:textColor="@color/black"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/daftar_label"
+        android:textColor="@color/hijau"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/inputNoTelepon"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDaftar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/masuk_dulu_label"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvMasuk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/masuk_label"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

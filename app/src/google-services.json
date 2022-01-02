@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "900420008888",
+    "project_id": "bank-sampah-9dc9b",
+    "storage_bucket": "bank-sampah-9dc9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900420008888:android:1d44c6bc701aac4ac4ed4d",
+        "android_client_info": {
+          "package_name": "com.demanganesia.banksampah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900420008888-na3nmtj3slnl5o0jr1c7qp9qs0cbr665.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.demanganesia.banksampah",
+            "certificate_hash": "ef6ac906f49e6f3a60a75968ac9a8d8257a970e5"
+          }
+        },
+        {
+          "client_id": "900420008888-c8en6283q1vvasq48r7m5r45nge124sv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmXTM2ePiwPapA-6K45iE5j9qpNzIgAww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900420008888-c8en6283q1vvasq48r7m5r45nge124sv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

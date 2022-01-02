@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bank Sampah</string>
+
+    <string name="username_label">Username</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="konfirmasi_password_label">Konfirmasi Password</string>
+    <string name="no_telepon_label">No Telepon</string>
+    <string name="masuk_label">Masuk</string>
+    <string name="daftar_label">Daftar</string>
+    <string name="daftar_dulu_label">Belum punya akun ?   </string>
+    <string name="masuk_dulu_label">Sudah punya akun silahkan </string>
+    <string name="daftar_sekarang">Daftar sekarang</string>
+</resources>
