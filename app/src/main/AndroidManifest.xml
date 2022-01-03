@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BankSampah">
+        <activity android:name=".DetailBankSampahActivity"></activity>
+        <activity android:name=".Lokasi" />
+        <activity android:name=".FilterActivity" />
+        <activity android:name=".DaftarHargaActivity" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".ProfilActivity" />
         <activity android:name=".DaftarActivity" />
         <activity android:name=".MainActivity" />

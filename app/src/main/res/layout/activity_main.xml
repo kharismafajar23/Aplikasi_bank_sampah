@@ -17,7 +17,7 @@
             android:layout_height="215dp"
             android:background="@drawable/bg_home"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:id="@+id/textView2"
