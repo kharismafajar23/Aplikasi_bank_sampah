@@ -32,7 +32,7 @@ public class InputDataActivity extends AppCompatActivity {
         spinnerOpsi = findViewById(R.id.spinnerOpsi);
         icRumah2 = findViewById(R.id.ic_rumah2);
         icProfil2 = findViewById(R.id.ic_profil2);
-        btnPesan = findViewById(R.id.btnPesan);
+        btnPesan = findViewById(R.id.btnPesan2);
         btnBack = findViewById(R.id.imageButton);
 
         String[] value = {"Sampah Plastik","Sampah Organik","Kantong Plastik","Sampah Kertas"};
@@ -73,7 +73,7 @@ public class InputDataActivity extends AppCompatActivity {
         });
 
         //ke kembali
-        btnPesan.setOnClickListener(new View.OnClickListener() {
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onBackPressed();

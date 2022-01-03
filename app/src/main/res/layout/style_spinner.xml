@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:fontFamily="@font/poppins_regular"
     android:textSize="10sp"
-    android:textColor="@color/hitam_teks">
+    android:textColor="@color/hitam_teks"
+    android:background="@color/white">
 
 </TextView>

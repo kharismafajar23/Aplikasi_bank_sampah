@@ -305,7 +305,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvAlamat" />
 
             <Button
-                android:id="@+id/btnPesan"
+                android:id="@+id/btnPesan2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="30dp"
@@ -325,7 +325,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnPesan"/>
+                app:layout_constraintTop_toBottomOf="@+id/btnPesan2"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

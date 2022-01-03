@@ -42,12 +42,12 @@ public class FilterActivity extends AppCompatActivity {
         String[] value2 = {"A","B","C","D","E"};
         ArrayList<String> arrayList2 = new ArrayList<>(Arrays.asList(value2));
         ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<>(this,R.layout.style_spinner);
-        spinnerProvinsi.setAdapter(arrayAdapter2);
+        spinnerKabupaten.setAdapter(arrayAdapter2);
 
         String[] value3 = {"a","b","c","d","e"};
         ArrayList<String> arrayList3 = new ArrayList<>(Arrays.asList(value3));
         ArrayAdapter<String> arrayAdapter3 = new ArrayAdapter<>(this,R.layout.style_spinner);
-        spinnerProvinsi.setAdapter(arrayAdapter3);
+        spinnerKecamatan.setAdapter(arrayAdapter3);
 
         //ke kembali
         btnBack.setOnClickListener(new View.OnClickListener() {

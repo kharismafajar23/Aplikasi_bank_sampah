@@ -37,7 +37,7 @@ public class ProfilActivity extends AppCompatActivity {
         btnTransaksi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent keDetBS = new Intent(ProfilActivity.this, DetailBankSampahActivity.class);
+                Intent keDetBS = new Intent(ProfilActivity.this, InputDataActivity.class);
                 startActivity(keDetBS);
             }
         });
