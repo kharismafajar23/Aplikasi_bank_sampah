@@ -68,7 +68,7 @@ public class MasukActivity extends AppCompatActivity {
                                 editor.apply();
 
                                 //Jika di klik masuk, menuju tampilan Home
-                                Intent keHome = new Intent(MasukActivity.this, MainActivity.class);
+                                Intent keHome = new Intent(MasukActivity.this, HomeActivity.class);
                                 startActivity(keHome);
                             }
                             else {

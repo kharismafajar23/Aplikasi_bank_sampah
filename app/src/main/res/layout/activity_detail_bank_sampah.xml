@@ -5,55 +5,349 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailBankSampahActivity"
-    android:background="@color/putih_bg">
+    android:background="@color/white">
 
     <View
+        android:id="@+id/view2"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:background="@drawable/header"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_marginTop="200dp"
-        android:background="@drawable/bg_rounded_top"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_rounded_top"
+        app:layout_constraintTop_toTopOf="@+id/view2">
 
         <ScrollView
-            android:paddingTop="40dp"
-            android:paddingRight="30dp"
+            android:paddingTop="35dp"
             android:paddingLeft="30dp"
+            android:paddingRight="30dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:text="Bank Sampah\nNogolaten"
-                android:textSize="30sp"
-                android:textColor="@color/hitam_teks"
-                android:fontFamily="@font/poppins_bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <LinearLayout
-                android:orientation="horizontal"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content" >
 
-                <ImageView
-                    android:src="@drawable/ic_lokasi"
-                    android:layout_width="14dp"
-                    android:layout_height="19dp"/>
                 <TextView
-
+                    android:id="@+id/tvNamaBankSampah"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Bank Sampah\nNogolaten"
+                    android:textColor="@color/hitam_teks"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tvalamat"
+                    android:paddingTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvNamaBankSampah">
+
+                    <ImageView
+                        android:src="@drawable/ic_lokasi"
+                        android:layout_width="14dp"
+                        android:layout_height="19dp"/>
+
+                    <TextView
+                        android:text="Jl Manduro no 1 Kratonan, Serengan,Kota Surakarta"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/hitam_teks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/descBankSampah"
+                    android:text="Pengelolaan sampah dengan sistem bank sampah ini mampu membantu pemerintah dalam menangani sampah dan meningkatkan ekomoni masyarakat "
+                    android:textSize="14sp"
+                    android:textColor="@color/hitam_teks"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvalamat" />
+
+                <LinearLayout
+                    android:id="@+id/garis"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="32dp"
+                    android:background="@color/garis_hitam"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/descBankSampah"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:id="@+id/tvFasilitas"
+                    android:text="Fasilitas"
+                    android:textSize="18sp"
+                    android:textColor="@color/hitam_teks"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/garis"/>
+
+                <LinearLayout
+                    android:id="@+id/gridFasilitas"
+                    android:layout_width="match_parent"
+                    android:layout_height="127dp"
+                    android:background="@drawable/bg_layout"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:weightSum="3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvFasilitas">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/bg_layout"
+                        android:elevation="4dp"
+                        android:orientation="vertical"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="30dp">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="53dp"
+                            android:src="@drawable/ic_pickup" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Jemput"
+                            android:textColor="@color/hijau"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_layout"
+                        android:elevation="4dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="30dp">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_cleaning" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Bersih"
+                            android:textColor="@color/hijau"
+                            android:textSize="12sp"
+                            android:layout_marginTop="7dp"/>
+
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_layout"
+                        android:gravity="center"
+                        android:elevation="4dp"
+                        android:orientation="vertical"
+                        android:paddingTop="18dp"
+                        android:paddingBottom="30dp">
+
+                        <ImageView
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            android:src="@drawable/ic_reusage" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Daur ulang"
+                            android:textColor="@color/hijau"
+                            android:textSize="12sp"
+                            android:layout_marginTop="7dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/garis2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="32dp"
+                    android:background="@color/garis_hitam"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gridFasilitas"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/penilaian"
+                    android:paddingTop="21dp"
+                    android:paddingBottom="21dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="32dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/garis2"
+                    android:background="@drawable/bg_penilaian">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="7dp">
+
+                            <ImageView
+                                android:src="@drawable/ic_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <ImageView
+                                android:src="@drawable/ic_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <ImageView
+                                android:src="@drawable/ic_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <ImageView
+                                android:src="@drawable/ic_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:text="Penilaian"
+                            android:textSize="12sp"
+                            android:textColor="@color/hitam_teks"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_marginLeft="70dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/profil1"
+                            android:layout_width="41dp"
+                            android:layout_height="41dp"
+                            android:src="@drawable/profil3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/profil2"
+                            android:layout_width="41dp"
+                            android:layout_height="41dp"
+                            android:layout_marginRight="-15dp"
+                            android:src="@drawable/profil2"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/profil1" />
+
+                        <ImageView
+                            android:id="@+id/profil3"
+                            android:layout_width="41dp"
+                            android:layout_height="41dp"
+                            android:layout_marginRight="-15dp"
+                            android:src="@drawable/profil1"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/profil2"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnPesan"
+                    android:layout_width="220dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="124dp"
+                    android:background="@drawable/button_hijau"
+                    android:text="Pesan pengambilan"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/penilaian" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="80sp"
+                    android:layout_height="55sp"
+                    android:background="@drawable/bg_stroke_hijau"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/penilaian">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_love" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnPesan"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </ScrollView>
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

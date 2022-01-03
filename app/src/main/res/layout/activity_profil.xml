@@ -8,12 +8,12 @@
     android:background="@color/putih_bg">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btnBack2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
-        android:background="@color/white"
+        android:background="@color/putih_bg"
         android:src="@drawable/ic_kembali"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +29,7 @@
         android:textColor="@color/hitam_teks"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBack2" />
 
     <LinearLayout
         android:id="@+id/l1"
@@ -209,7 +209,7 @@
         android:id="@+id/linearLayout2"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:padding="4dp"
         android:elevation="5dp"
         android:weightSum="3"
@@ -224,6 +224,7 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/ic_rumah"
                 android:src="@drawable/ic_rumah"
                 android:layout_width="22dp"
                 android:layout_height="25dp"/>
@@ -236,6 +237,7 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/ic_transaksi3"
                 android:src="@drawable/ic_transaksi"
                 android:layout_width="33dp"
                 android:layout_height="33dp"/>

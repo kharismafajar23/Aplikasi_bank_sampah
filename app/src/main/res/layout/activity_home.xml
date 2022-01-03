@@ -80,6 +80,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
+                android:id="@+id/btnFilter"
                 android:layout_width="58dp"
                 android:layout_height="58dp"
                 android:layout_marginStart="16dp"
@@ -743,6 +744,7 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/ic_transaksi"
                 android:src="@drawable/ic_transaksi"
                 android:layout_width="33dp"
                 android:layout_height="33dp"/>
@@ -755,6 +757,7 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/ic_profil"
                 android:src="@drawable/ic_profil"
                 android:layout_width="22dp"
                 android:layout_height="25dp"/>

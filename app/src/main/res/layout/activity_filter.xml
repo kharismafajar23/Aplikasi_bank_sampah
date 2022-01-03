@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FilterActivity">
+    tools:context=".FilterActivity"
+    android:background="@color/white">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:background="@color/putih_bg"
+                android:background="@color/white"
                 android:src="@drawable/ic_kembali"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -50,7 +51,77 @@
                 android:layout_marginTop="20dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvFilter"/>
+
             <!--    pilihan lokasi disini  -->
+
+            <TextView
+                android:id="@+id/tvProvinsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Provinsi"
+                android:textColor="@color/hitam_teks"
+                android:textSize="12sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="17dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLokasi" />
+
+            <Spinner
+                android:id="@+id/spinnerProvinsi"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/spinner_style"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvProvinsi"/>
+
+            <TextView
+                android:id="@+id/tvKabupaten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Kabupaten"
+                android:textColor="@color/hitam_teks"
+                android:textSize="12sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="17dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerProvinsi" />
+
+            <Spinner
+                android:id="@+id/spinnerKabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/spinner_style"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvKabupaten"/>
+
+            <TextView
+                android:id="@+id/tvKecamatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Kecamatan"
+                android:textColor="@color/hitam_teks"
+                android:textSize="12sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="17dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerKabupaten" />
+
+            <Spinner
+                android:id="@+id/spinnerKecamatan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/spinner_style"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvKecamatan"/>
 
             <TextView
                 android:id="@+id/tvJenisSampah"
@@ -62,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvLokasi"/>
+                app:layout_constraintTop_toBottomOf="@+id/spinnerKecamatan"/>
 
             <LinearLayout
                 android:id="@+id/grid1"
@@ -205,7 +276,7 @@
             <LinearLayout
                 android:id="@+id/garis"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="1dp"
                 android:layout_marginTop="46dp"
                 android:layout_marginRight="32dp"
                 android:background="@color/garis_hitam"
@@ -333,7 +404,7 @@
             <LinearLayout
                 android:id="@+id/garis2"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="1dp"
                 android:layout_marginTop="42dp"
                 android:layout_marginRight="32dp"
                 android:background="@color/garis_hitam"
@@ -345,7 +416,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="90dp"
                 android:layout_marginRight="32dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/garis2"/>
@@ -359,7 +430,8 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="4dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
         android:elevation="5dp"
         android:background="@color/putih_bg"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -373,14 +445,16 @@
             android:layout_height="match_parent">
 
             <Button
+                android:id="@+id/btnHapus"
                 android:text="Hapus"
                 android:textSize="18sp"
                 android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/hijau"
                 android:textAllCaps="false"
                 android:background="@drawable/bg_stroke_hijau"
+                android:shadowRadius="0dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="55dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -390,13 +464,17 @@
             android:layout_height="match_parent">
 
             <Button
+                android:id="@+id/btnTampilkan"
                 android:text="Tampilkan"
                 android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/white"
+                android:textSize="18dp"
                 android:textAllCaps="false"
                 android:background="@drawable/bg_hijau"
+                android:shadowRadius="0dp"
+                android:layout_marginRight="30dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="55dp"/>
         </LinearLayout>
 
 

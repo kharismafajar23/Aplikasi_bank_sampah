@@ -71,7 +71,7 @@ public class DaftarActivity extends AppCompatActivity {
                     }
                 });
 
-                Intent keHome = new Intent(DaftarActivity.this, MainActivity.class);
+                Intent keHome = new Intent(DaftarActivity.this, HomeActivity.class);
                 startActivity(keHome);
             }
         });
