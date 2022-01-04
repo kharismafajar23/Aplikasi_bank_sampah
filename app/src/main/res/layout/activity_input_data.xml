@@ -208,12 +208,15 @@
                 app:layout_constraintTop_toBottomOf="@+id/tanggalan" />
 
             <Spinner
+                android:textColor="@color/hitam_teks"
+                android:textAlignment="textStart"
                 android:id="@+id/spinnerJenisBarang"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
+                android:paddingLeft="6dp"
                 android:background="@drawable/bg_spinner"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -262,12 +265,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/etBerat" />
 
             <Spinner
+                android:textColor="@color/hitam_teks"
                 android:id="@+id/spinnerOpsi"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
+                android:paddingLeft="6dp"
                 android:background="@drawable/bg_spinner"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

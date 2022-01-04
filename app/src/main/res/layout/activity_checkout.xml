@@ -42,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
-        android:text="Firman Kurnianto"
+        android:text="John Doe"
         android:textColor="@color/hitam_teks"
         android:textSize="16dp"
         android:layout_marginTop="43dp"

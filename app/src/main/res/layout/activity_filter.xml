@@ -310,31 +310,37 @@
                 app:layout_constraintTop_toBottomOf="@id/garis2" />
 
             <Spinner
+                android:textColor="@color/hitam_teks"
                 android:id="@+id/spinnerProvinsi1"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="30dp"
+                android:paddingLeft="6dp"
                 android:background="@drawable/bg_spinner"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvProvinsi" />
 
             <Spinner
+                android:textColor="@color/hitam_teks"
                 android:id="@+id/spinnerKabupaten1"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="30dp"
+                android:paddingLeft="6dp"
                 android:background="@drawable/bg_spinner"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvKabupaten" />
 
             <Spinner
                 android:id="@+id/spinnerKecamatan1"
+                android:textColor="@color/hitam_teks"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="30dp"
+                android:paddingLeft="6dp"
                 android:background="@drawable/bg_spinner"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvKecamatan" />

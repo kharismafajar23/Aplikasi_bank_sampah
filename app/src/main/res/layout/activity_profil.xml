@@ -63,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
-                android:text="Firman Kurnianto"
+                android:text="John Doe"
                 android:textColor="@color/hitam_teks"
                 android:textSize="20dp" />
 
@@ -72,7 +72,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
-                android:text="Firman123@gmail.com"
+                android:text="johndoe123@gmail.com"
                 android:textColor="@color/abu_abu"
                 android:textSize="16dp"/>
         </LinearLayout>
