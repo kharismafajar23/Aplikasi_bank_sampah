@@ -345,10 +345,6 @@
                     app:layout_constraintTop_toBottomOf="@+id/btnPesan"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-
         </ScrollView>
-
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

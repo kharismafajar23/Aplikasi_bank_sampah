@@ -39,6 +39,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnBack1" />
 
+    <fragment
+        android:id="@+id/maps"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/Alamat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
     <TextView
         android:id="@+id/Alamat"
         android:layout_width="wrap_content"
@@ -69,6 +80,8 @@
         android:layout_height="55dp"
         android:layout_marginLeft="56dp"
         android:layout_marginRight="56dp"
+        android:layout_marginBottom="12dp"
+        android:textAllCaps="false"
         android:background="@drawable/button_hijau"
         android:fontFamily="@font/poppins_semibold"
         android:text="Pilih Lokasi saat ini"
