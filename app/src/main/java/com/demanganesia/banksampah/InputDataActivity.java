@@ -37,13 +37,13 @@ public class InputDataActivity extends AppCompatActivity {
 
         String[] value = {"Sampah Plastik","Sampah Organik","Kantong Plastik","Sampah Kertas"};
         ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(value));
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,R.layout.style_spinner);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,R.layout.style_spinner, arrayList);
         spinnerJenisBarang.setAdapter(arrayAdapter);
 
         String[] value2 = {"Gerobak","Pickup","Truk","Motor"};
-        ArrayList<String> arrayList2 = new ArrayList<>(Arrays.asList(value));
-        ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<>(this,R.layout.style_spinner);
-        spinnerOpsi.setAdapter(arrayAdapter);
+        ArrayList<String> arrayList2 = new ArrayList<>(Arrays.asList(value2));
+        ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<>(this,R.layout.style_spinner, arrayList2);
+        spinnerOpsi.setAdapter(arrayAdapter2);
 
         //ke beranda
         icRumah2.setOnClickListener(new View.OnClickListener() {
