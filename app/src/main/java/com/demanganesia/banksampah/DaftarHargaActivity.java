@@ -23,7 +23,7 @@ public class DaftarHargaActivity extends AppCompatActivity {
 
         btnBack = findViewById(R.id.imageButton2);
         btnHome = findViewById(R.id.ic_home);
-        btnTransaksi = findViewById(R.id.ic_transaksi);
+        btnTransaksi = findViewById(R.id.btn_transaksi);
         btnProfil = findViewById(R.id.ic_profil3);
 
         //ke kembali
